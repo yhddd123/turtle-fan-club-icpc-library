@@ -15,9 +15,9 @@ void solve() {
 		}
 	}
 	mems(b, -1);
-	for (int i = 1, r = 0; i <= n; ++i) {
+	for (int i = 1, r = 1; i <= n; ++i) {
 		int p = -1;
-		for (int j = r + 1; j <= m; ++j) {
+		for (int j = r; j <= m; ++j) {
 			if (a[j].test(i)) {
 				p = j;
 				break;
@@ -26,7 +26,6 @@ void solve() {
 		if (p == -1) {
 			continue;
 		}
-		++r;
 		if (p != r) {
 			swap(a[p], a[r]);
 		}
@@ -35,6 +34,7 @@ void solve() {
 				a[j] ^= a[r];
 			}
 		}
+		++r;
 	}
 	for (int i = 1; i <= m; ++i) {
 		if (a[i].any()) {
