@@ -56,8 +56,9 @@
 \contentsline {subsubsection}{\numberline {6.5.3}多项式复合集合幂级数}{38}{subsubsection.6.5.3}%
 \contentsline {subsection}{\numberline {6.6}杂项}{38}{subsection.6.6}%
 \contentsline {subsubsection}{\numberline {6.6.1}插值}{38}{subsubsection.6.6.1}%
-\contentsline {section}{\numberline {7}string}{39}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Manacher}{39}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Z 函数}{39}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Runs}{39}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}后缀自动机}{42}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {6.6.2}基于值域预处理的快速离散对数}{38}{subsubsection.6.6.2}%
+\contentsline {section}{\numberline {7}string}{40}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Manacher}{40}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Z 函数}{40}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Runs}{40}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}后缀自动机}{43}{subsection.7.4}%
