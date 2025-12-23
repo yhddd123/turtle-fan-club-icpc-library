@@ -23,7 +23,7 @@ backgroundcolor=\color{white},   % choose the background color
 basicstyle=\footnotesize\ttfamily,        % size of fonts used for the code
 columns=fullflexible,
 inputencoding=utf8,
-extendedchars=true, 
+extendedchars=false, 
 breaklines=true,                 % automatic line breaking only at whitespace
 captionpos=b,                    % sets the caption-position to bottom
 tabsize=4,
@@ -37,8 +37,8 @@ rulesepcolor=\color{red!20!green!20!blue!20},
 language=c++,
 }
 
-\title{yhddd 的 icpc 模板}
-\author{yhddd}
+\title{Turtle Fan Club (Letao Zhang, Haoming Yu, Lian Huang) 的 icpc 模板}
+\author{EuphoricStar \& gdf\_yhm \& dieselhuang}
 \date{\today}
 
 \begin{document}
@@ -141,6 +141,16 @@ $4(n+m)$ 次。
 
 \subsubsection{prufer 序}
 
+\subsubsection{并查集启发式分裂}
+
+\lstinputlisting[language=c++]{code/graph/dsu_split.cpp}
+
+\subsubsection{Maintaining mst with online edge insertions — no LCT needed}
+
+比 lct 快 $10$ 倍。
+
+\lstinputlisting[language=c++]{code/graph/wdsu.cpp}
+
 \subsection{连通性}
 
 \subsubsection{边双}
@@ -164,6 +174,8 @@ $4(n+m)$ 次。
 \subsubsection{预留推进}
 
 \subsubsection{原始对偶}
+
+\lstinputlisting[language=c++]{code/graph/primal_dual.cpp}
 
 \subsubsection{最小割树}
 
@@ -228,6 +240,8 @@ $4(n+m)$ 次。
 \subsubsection{多点求值}
 
 \subsection{集合幂级数}
+
+\lstinputlisting[language=c++]{code/math/ji_he_mi_ji_shu.cpp}
 
 \subsubsection{FWT}
 
