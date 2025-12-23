@@ -105,11 +105,11 @@ $4(n+m)$ 次。
 
 \subsubsection{KTT}
 
-\subsection{平衡树}
+% \subsection{平衡树}
 
-\subsection{莫队}
+% \subsection{莫队}
 
-\subsection{分块}
+% \subsection{分块}
 
 \subsection{手写 STL}
 
@@ -135,9 +135,9 @@ $4(n+m)$ 次。
 
 \lstinputlisting[language=c++]{code/graph/maomaochong.cpp}
 
-\subsubsection{点分治}
+% \subsubsection{点分治}
 
-\subsubsection{动态 dp}
+% \subsubsection{动态 dp}
 
 \subsubsection{prufer 序}
 
@@ -177,7 +177,13 @@ $4(n+m)$ 次。
 
 \lstinputlisting[language=c++]{code/graph/primal_dual.cpp}
 
-\subsubsection{最小割树}
+% \subsubsection{最小割树}
+
+\subsubsection{k 正则二分图完美匹配}
+
+单次期望 $O(n\log n)$。
+
+\lstinputlisting[language=c++]{code/math/k-Bipartite_graph.cpp}
 
 \subsubsection{一般图最大匹配}
 
@@ -212,19 +218,23 @@ $4(n+m)$ 次。
 
 \subsection{矩阵}
 
-\subsubsection{高斯消元}
-
 \subsubsection{高斯消元（模 2）}
 
 \lstinputlisting[language=c++]{code/math/gauss_xor.cpp}
-
-\subsubsection{矩阵求逆}
 
 \subsubsection{行列式}
 
 \lstinputlisting[language=c++]{code/math/det.cpp}
 
 \subsubsection{特征多项式}
+
+$A$ 是 $n$ 阶方阵，若对于数 $x$，存在向量 $\alpha$，$A\alpha=x\alpha$，则 $x$ 为 $A$ 的特征值，$\alpha$ 为特征向量。
+
+即 $(x I-A)\alpha=0$，即 $det(x I-A)=0$。
+
+$det(x I-A)$ 为关于 $x$ 的至多 $n$ 次多项式，称为特征多项式。
+
+\lstinputlisting[language=c++]{code/math/characteristic_polynomial.cpp}
 
 \subsection{poly}
 
@@ -242,21 +252,25 @@ $4(n+m)$ 次。
 
 \subsubsection{ni ln exp}
 
+$O(n\log^2 n)$ 版本。
+
 \lstinputlisting[language=c++]{code/math/ni_ln_exp.cpp}
 
 \subsection{另一份 poly}
 
 \lstinputlisting[language=c++]{code/math/poly.cpp}
 
-\subsubsection{多点求值}
+% \subsubsection{多点求值}
 
 \subsection{集合幂级数}
 
-\lstinputlisting[language=c++]{code/math/ji_he_mi_ji_shu.cpp}
-
 \subsubsection{FWT}
 
-\subsubsection{子集卷积}
+\lstinputlisting[language=c++]{code/math/fwt.cpp}
+
+\subsubsection{子集卷积 ln exp}
+
+\lstinputlisting[language=c++]{code/math/ji_he_mi_ji_shu.cpp}
 
 \subsubsection{多项式复合集合幂级数}
 

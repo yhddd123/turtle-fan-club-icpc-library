@@ -1,4 +1,3 @@
-
 #define ull unsigned long long
 ull pw[65];
 struct bs{

@@ -1,4 +1,3 @@
-
 int merge(int u,int v,int l,int r){
 	if(!u||!v)return u|v;
 	if(l==r){tree[u]+=tree[v];clr(v);return u;}

@@ -13,21 +13,16 @@
 \contentsline {subsubsection}{\numberline {3.1.3}beats}{7}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}合并分裂}{7}{subsubsection.3.1.4}%
 \contentsline {subsubsection}{\numberline {3.1.5}KTT}{8}{subsubsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.2}平衡树}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}莫队}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}分块}{8}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}手写 STL}{8}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}bitset}{8}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}哈希表}{8}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}deque}{9}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.2}手写 STL}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}bitset}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}哈希表}{8}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}deque}{8}{subsubsection.3.2.3}%
 \contentsline {section}{\numberline {4}graph}{10}{section.4}%
 \contentsline {subsection}{\numberline {4.1}树}{10}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}毛毛虫剖分}{10}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}点分治}{12}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}动态 dp}{12}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}prufer 序}{12}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}并查集启发式分裂}{12}{subsubsection.4.1.5}%
-\contentsline {subsubsection}{\numberline {4.1.6}Maintaining mst with online edge insertions — no LCT needed}{13}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.2}prufer 序}{12}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}并查集启发式分裂}{12}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Maintaining mst with online edge insertions — no LCT needed}{13}{subsubsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.2}连通性}{14}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}边双}{14}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}点双}{14}{subsubsection.4.2.2}%
@@ -36,36 +31,33 @@
 \contentsline {subsection}{\numberline {4.3}流}{17}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}预留推进}{17}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}原始对偶}{17}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}最小割树}{18}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}一般图最大匹配}{18}{subsubsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.4}杂项}{18}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}欧拉回路}{18}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}四元环计数}{18}{subsubsection.4.4.2}%
-\contentsline {section}{\numberline {5}geometry}{19}{section.5}%
-\contentsline {section}{\numberline {6}math}{23}{section.6}%
-\contentsline {subsection}{\numberline {6.1}筛}{23}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}PN 筛}{23}{subsubsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.2}矩阵}{25}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}高斯消元}{25}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}高斯消元（模 2）}{25}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}矩阵求逆}{26}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}行列式}{26}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}特征多项式}{27}{subsubsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.3}poly}{27}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}fft}{27}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}ntt}{27}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}mtt}{28}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}ni ln exp}{28}{subsubsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.4}另一份 poly}{30}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}多点求值}{35}{subsubsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.5}集合幂级数}{35}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}FWT}{36}{subsubsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.2}子集卷积}{36}{subsubsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.3}多项式复合集合幂级数}{36}{subsubsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.6}杂项}{36}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}插值}{36}{subsubsection.6.6.1}%
-\contentsline {section}{\numberline {7}string}{37}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Manacher}{37}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Z 函数}{37}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Runs}{37}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}后缀自动机}{40}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {4.3.3}k 正则二分图完美匹配}{18}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}一般图最大匹配}{19}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}杂项}{19}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}欧拉回路}{19}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}四元环计数}{19}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}geometry}{20}{section.5}%
+\contentsline {section}{\numberline {6}math}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}筛}{24}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}PN 筛}{24}{subsubsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.2}矩阵}{26}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}高斯消元（模 2）}{26}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}行列式}{27}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}特征多项式}{28}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}poly}{28}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}fft}{28}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}ntt}{29}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}mtt}{30}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}ni ln exp}{30}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}另一份 poly}{31}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}集合幂级数}{37}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}FWT}{37}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}子集卷积 ln exp}{37}{subsubsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.3}多项式复合集合幂级数}{38}{subsubsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.6}杂项}{38}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}插值}{38}{subsubsection.6.6.1}%
+\contentsline {section}{\numberline {7}string}{39}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Manacher}{39}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Z 函数}{39}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Runs}{39}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}后缀自动机}{42}{subsection.7.4}%
