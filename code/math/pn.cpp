@@ -2,7 +2,6 @@ ll n, pr[maxn / 5], tot, pw[999], ans;
 bool vis[maxn];
 int phi[maxn], a[maxn];
 vector<ll> h[100100];
-
 inline void init() {
 	phi[1] = 1;
 	for (int i = 2; i <= N; ++i) {
@@ -26,16 +25,10 @@ inline void init() {
 		phi[i] = (phi[i] + phi[i - 1]) % mod;
 	}
 }
-
 unordered_map<ll, ll> mp, M;
-
 ll dfs(ll n) {
-	if (n <= N) {
-		return phi[n];
-	}
-	if (mp.find(n) != mp.end()) {
-		return mp[n];
-	}
+	if (n <= N) return phi[n];
+	if (mp.find(n) != mp.end()) return mp[n];
 	ll ans = (n % mod) * ((n + 1) % mod) % mod * inv2 % mod;
 	for (ll i = 2, j; i <= n; i = j + 1) {
 		j = n / (n / i);
@@ -43,21 +36,14 @@ ll dfs(ll n) {
 	}
 	return mp[n] = ans;
 }
-
 ll calc(ll n) {
-	if (n <= N / 2) {
-		return a[n];
-	}
-	if (M.find(n) != M.end()) {
-		return M[n];
-	}
+	if (n <= N / 2) return a[n];
+	if (M.find(n) != M.end()) return M[n];
 	return M[n] = (dfs(n) + calc(n / 2)) % mod;
 }
-
 inline ll G(ll n) {
 	return (dfs(n) + calc(n / 2) * 2 % mod) % mod;
 }
-
 void dfs(int d, ll x, ll y) {
 	if (pr[d] * pr[d] > n / x) {
 		ans = (ans + y * G(n / x) % mod) % mod;
@@ -72,7 +58,6 @@ void dfs(int d, ll x, ll y) {
 		++k;
 	}
 }
-
 void solve() {
 	scanf("%lld", &n);
 	for (int i = 1; i <= tot && pr[i] * pr[i] <= n; ++i) {

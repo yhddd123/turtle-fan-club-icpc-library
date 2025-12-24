@@ -1,10 +1,8 @@
 struct SAM {
 	int lst, tot, fa[maxn], ch[maxn][26], len[maxn];
-	
 	inline void init() {
 		lst = tot = 1;
 	}
-	
 	inline void insert(int k, int c) {
 		int u = ++tot, p = lst;
 		sz[u] = 1;

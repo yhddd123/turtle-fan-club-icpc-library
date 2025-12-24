@@ -38,6 +38,3 @@ void pop_back(){
 	if(!ed.size())rebuildback();
 	ed.pop_back();
 }
-int size(){
-	return st.size()+ed.size();
-}

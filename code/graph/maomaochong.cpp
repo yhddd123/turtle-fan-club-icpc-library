@@ -80,7 +80,6 @@ void dfsdw(int u){
 	}
 	for(int v:e[u])dfsdw(v);
 }
-vector<pii> getsub(int u){return sub[u];}
 vector<pii> gettp(int u,int tp,int k){
 	vector<pii> a=kans[u][k],b=kans[tp][k],nw;
 	for(int i=0,l=0;i<a.size();i++){

@@ -1,26 +1,8 @@
 const int maxn = (1 << 22) + 50;
 const int mod = 998244353, G = 3;
-
-inline void fix(int &x) {
-	x += ((x >> 31) & mod);
-}
-
-inline int qpow(int b, int p) {
-	int res = 1;
-	while (p) {
-		if (p & 1) {
-			res = 1ULL * res * b % mod;
-		}
-		b = 1ULL * b * b % mod;
-		p >>= 1;
-	}
-	return res;
-}
-
+inline void fix(int &x) {x += ((x >> 31) & mod);}
 typedef vector<int> poly;
-
 int r[maxn];
-
 inline void NTT(poly &a, int o) {
 	int n = (int)a.size();
 	for (int i = 0; i < n; ++i) {
@@ -50,7 +32,6 @@ inline void NTT(poly &a, int o) {
 		}
 	}
 }
-
 inline poly operator * (poly a, poly b) {
 	NTT(a, 1);
 	NTT(b, 1);
@@ -61,7 +42,6 @@ inline poly operator * (poly a, poly b) {
 	NTT(a, 0);
 	return a;
 }
-
 inline poly mul(poly a, poly b) {
 	int n = (int)a.size() - 1, m = (int)b.size() - 1, k = 0;
 	if (min(n, m) <= 100) {
@@ -95,7 +75,6 @@ inline poly mul(poly a, poly b) {
 	res.resize(n + m + 1);
 	return res;
 }
-
 poly inv(poly &a, int m) {
 	if (m == 1) {
 		return poly(1, qpow(a[0], mod - 2));
@@ -113,7 +92,6 @@ poly inv(poly &a, int m) {
 	}
 	return res;
 }
-
 inline poly inv(poly a) {
 	int n = (int)a.size() - 1;
 	int t = __lg(n + 1);
@@ -128,7 +106,6 @@ inline poly inv(poly a) {
 	b.resize(n + 1);
 	return b;
 }
-
 inline poly der(poly a) {
 	int n = (int)a.size() - 1;
 	poly res(n);
@@ -137,7 +114,6 @@ inline poly der(poly a) {
 	}
 	return res;
 }
-
 inline poly itg(poly a) {
 	int n = (int)a.size() - 1;
 	poly res(n + 2), I(n + 2);
@@ -150,14 +126,12 @@ inline poly itg(poly a) {
 	}
 	return res;
 }
-
 inline poly ln(poly a) {
 	int n = (int)a.size() - 1;
 	poly res = itg(mul(der(a), inv(a)));
 	res.resize(n + 1);
 	return res;
 }
-
 poly exp(poly &a, int m) {
 	if (m == 1) {
 		poly res(1, 1);
@@ -175,7 +149,6 @@ poly exp(poly &a, int m) {
 	res.resize(m);
 	return res;
 }
-
 inline poly exp(poly a) {
 	int n = (int)a.size() - 1;
 	int t = __lg(n + 1);
@@ -190,7 +163,6 @@ inline poly exp(poly a) {
 	b.resize(n + 1);
 	return b;
 }
-
 inline poly pmod(poly a, poly b) {
 	int n = (int)a.size() - 1, m = (int)b.size() - 1;
 	if (n < m) {
@@ -211,7 +183,6 @@ inline poly pmod(poly a, poly b) {
 	}
 	return res;
 }
-
 inline poly multipoint(poly a, poly b) {
 	int n = (int)a.size() - 1, m = (int)b.size() - 1;
 	vector<poly> F(1 << (__lg(m + 1) + 2));
@@ -254,7 +225,6 @@ inline poly multipoint(poly a, poly b) {
 	dfs2(dfs2, 1, 0, m, q);
 	return ans;
 }
-
 inline int recur(int m, poly a, poly b) {
 	int n = (int)a.size();
 	if (m < n) {

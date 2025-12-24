@@ -10,18 +10,14 @@ inline int det() {
 				break;
 			}
 		}
-		if (!a[i][i]) {
-			return 0;
-		}
+		if (!a[i][i]) return 0;
 		ans = 1LL * ans * a[i][i] % mod;
 		int t = qpow(a[i][i], mod - 2);
 		for (int j = i; j <= n; ++j) {
 			a[i][j] = 1LL * a[i][j] * t % mod;
 		}
 		for (int j = 1; j <= n; ++j) {
-			if (i == j) {
-				continue;
-			}
+			if (i == j) continue;
 			for (int k = i + 1; k <= n; ++k) {
 				fix(a[j][k] -= 1LL * a[j][i] * a[i][k] % mod);
 			}

@@ -33,11 +33,6 @@ bool dij(){
 	return dis[t]!=inf;
 }
 void work(){
-	n=read();m=read();s=read();t=read();
-	for(int i=1;i<=m;i++){
-		int u=read(),v=read(),w=read(),c=read();
-		add(u,v,w,c);
-	}
 	spfa();
 	while(dij()){
 		for(int i=1;i<=n;i++)h[i]+=dis[i];

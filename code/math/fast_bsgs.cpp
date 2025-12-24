@@ -26,7 +26,6 @@ int pre[maxn],cnt;
 int a[maxn],b[maxn];
 void init(){
     n=sqrt(mod)+1;B=sqrt(1ll*mod*n/log2(n));
-    // cout<<n<<" "<<B<<"\n";
     int mul=1;for(int i=0;i<B;i++){
         mp[mul]=i;
         mul=1ll*mul*g%mod;

@@ -1,19 +1,15 @@
 const int maxn = 1000100;
 const int logn = 22;
-
 int n, m, sa[maxn], id[maxn], old[maxn << 1], h[maxn], cnt[maxn];
 char s[maxn];
 pii p[maxn];
-
 struct SA {
 	int f[logn][maxn], rk[maxn];
 	char t[maxn];
-	
 	inline int qmin(int l, int r) {
 		int k = __lg(r - l + 1);
 		return min(f[k][l], f[k][r - (1 << k) + 1]);
 	}
-	
 	inline int lcp(int x, int y) {
 		if (x == y) {
 			return n - x + 1;
@@ -34,7 +30,6 @@ struct SA {
 		}
 		return qmin(x + 1, y);
 	}
-	
 	inline void build() {
 		int m = 127;
 		for (int i = 1; i <= m; ++i) {
@@ -110,20 +105,16 @@ struct SA {
 		}
 	}
 } A, B;
-
 inline int lcp(int x, int y) {
 	return A.lcp(x, y);
 }
-
 inline int lcs(int x, int y) {
 	return B.lcp(n - x + 1, n - y + 1);
 }
-
 struct node {
 	int l, r, k;
 	node(int a = 0, int b = 0, int c = 0) : l(a), r(b), k(c) {}
 } a[maxn << 1], b[maxn << 1];
-
 void runs() {
 	n = reads(s + 1);
 	A.build();
